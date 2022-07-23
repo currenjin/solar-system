@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +18,7 @@
     "three": "^0.133.0"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0"
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "gh-pages": "^4.0.0"
   }
 }
