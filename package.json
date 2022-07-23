@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel ./src/index.html",
     "prebuild-dev": "rm -rf dist/*",
-    "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
+    "build-dev": "npx parcel build ./src/index.html --no-optimize --public-url ./",
     "prebuild": "rm -rf dist/*",
-    "build": "parcel build ./src/index.html --public-url ./",
+    "build": "npx parcel build ./src/index.html --public-url ./",
     "push-gh-pages": "push-dir --dir=dist --branch=first-solar-system --cleanup --verbose"
   },
   "keywords": [],
