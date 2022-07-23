@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel ./src/index.html",
-    "prebuild-dev": "shx rm -rf dist/*",
+    "start": "npx parcel ./src/index.html",
+    "prebuild-dev": "rm -rf dist/*",
     "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
-    "prebuild": "shx rm -rf dist/*",
+    "prebuild": "rm -rf dist/*",
     "build": "parcel build ./src/index.html --public-url ./",
     "push-gh-pages": "push-dir --dir=dist --branch=first-solar-system --cleanup --verbose"
   },
