@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html",
-    "predeploy": "rm -rf dist && npx parcel build src/index.html --no-source-maps --public-url ./",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "parcel-bundler": "^1.12.5"
   }
 }
