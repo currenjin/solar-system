@@ -1,6 +1,0 @@
-.idea
-.DS_Store
-.parcel-cache
-.cache
-dist/*
-node_modules/*
